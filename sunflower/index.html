@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunflower</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sunflower">
+        <div class="flower_wrapper">
+            <div class="flower_stem"></div>
+            <div class="flower_center"></div>
+            <div class="flower_petal flower_petal-1"></div>
+            <div class="flower_petal flower_petal-2"></div>
+            <div class="flower_petal flower_petal-3"></div>
+            <div class="flower_petal flower_petal-4"></div>
+            <div class="flower_petal flower_petal-5"></div>
+            <div class="flower_petal flower_petal-6"></div>
+            <div class="flower_petal flower_petal-7"></div>
+            <div class="flower_petal flower_petal-8"></div>
+            <div class="flower_petal flower_petal-9"></div>
+            <div class="flower_petal flower_petal-10"></div>
+            <div class="flower_petal flower_petal-11"></div>
+            <div class="flower_petal flower_petal-12"></div>
+
+            <div class="flower_leaf flower_leaf-1"></div>
+            <div class="flower_leaf flower_leaf-2"></div>
+
+            <div class="flower_light flower_light-1"></div>
+            <div class="flower_light flower_light-2"></div>
+            <div class="flower_light flower_light-3"></div>
+            <div class="flower_light flower_light-4"></div>
+            <div class="flower_light flower_light-5"></div>
+            <div class="flower_light flower_light-6"></div>
+            <div class="flower_light flower_light-7"></div>
+            <div class="flower_light flower_light-8"></div>
+        </div>
+    </div>
+
+    <div class="light light-1"></div>
+    <div class="light light-2"></div>
+    <div class="light light-3"></div>
+    <div class="light light-4"></div>
+    <div class="light light-5"></div>
+    <div class="light light-6"></div>
+    <div class="light light-7"></div>
+    <div class="light light-8"></div>
+    <div class="light light-9"></div>
+    <div class="light light-10"></div>
+    <div class="light light-11"></div>
+    <div class="light light-12"></div>
+
+    <!--   boton de audio-->
+    <audio id="miAudio" src="cancion/Floricienta - Flores Amarillas (Official Video).mp3" preload="auto"></audio>
+    
+    <button id="botonPlayPause" onclick="playPause()">Reproducir</button>
+
+    <script>
+        var miAudio = document.getElementById('miAudio');
+        var botonPlayPause = document.getElementById('botonPlayPause');
+
+        function playPause() {
+            if (miAudio.paused) {
+                miAudio.play();
+                botonPlayPause.innerHTML = 'Pausa';
+            } else {
+                miAudio.pause();
+                botonPlayPause.innerHTML = 'Reproducir';
+            }
+        }
+    </script>
+</body>
+</html>
